@@ -6,6 +6,9 @@ authors = ["KYHSGeekCode <jourhyang123@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+kfp = "^1.8.12"
+google-cloud-aiplatform = "^1.11.0"
+google-cloud-pipeline-components = "^1.0.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
