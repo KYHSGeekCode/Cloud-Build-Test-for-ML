@@ -5,7 +5,7 @@ import google.auth
 if __name__ == "__main__":
     credentials, project_id = google.auth.default()
     
-    REGION = "us-central1"
+    REGION = "asia-northeast3"
     BUCKET_NAME="gs://" + project_id + "-vertexai"
     DISPLAY_NAME=os.environ.get("BRANCH_NAME")
     PIPELINE_NAME=DISPLAY_NAME + "-pipeline"
