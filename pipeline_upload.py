@@ -6,7 +6,7 @@ if __name__ == "__main__":
     
     REGION = "us-central1"
     BUCKET_NAME="gs://" + project_id + "-vertexai"
-    DISPLAY_NAME="damagedcar"
+    DISPLAY_NAME=os.getenv("BRANCH_NAME")
     PIPELINE_NAME=DISPLAY_NAME + "-pipeline"
 
     storage_client = storage.Client()

@@ -5,5 +5,7 @@ steps:
 - name: python
   entrypoint: python
   args: ["pipeline_upload.py"]
+  env:
+    - "BRANCH_NAME=$BRANCH_NAME"
 options:
   logging: CLOUD_LOGGING_ONLY
