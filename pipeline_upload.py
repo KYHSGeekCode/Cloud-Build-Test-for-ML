@@ -1,4 +1,5 @@
 from google.cloud import storage
+import os
 import google.auth
 
 if __name__ == "__main__":
@@ -6,7 +7,7 @@ if __name__ == "__main__":
     
     REGION = "us-central1"
     BUCKET_NAME="gs://" + project_id + "-vertexai"
-    DISPLAY_NAME=os.getenv("BRANCH_NAME")
+    DISPLAY_NAME=os.environ.get("BRANCH_NAME")
     PIPELINE_NAME=DISPLAY_NAME + "-pipeline"
 
     storage_client = storage.Client()
